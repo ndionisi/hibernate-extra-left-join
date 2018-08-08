@@ -15,7 +15,7 @@ public class Customer {
     }
 
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinTable(
             name = "customer_address_association",
             joinColumns = @JoinColumn(name = "customer_id"),
